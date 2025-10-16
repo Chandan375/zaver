@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Zaver Estate Consultant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-home"></i>
+                <span>Zaver Estate</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="properties.html" class="active">Properties</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Properties Hero Section -->
+    <section class="properties-hero">
+        <div class="container">
+            <h1>Property Listings</h1>
+            <p>Discover premium properties in Thakur Complex & Thakur Village</p>
+        </div>
+    </section>
+
+    <!-- Property Search -->
+    <section class="property-search">
+        <div class="container">
+            <div class="search-container">
+                <h2>Find Your Perfect Property</h2>
+                <div class="search-form">
+                    <div class="search-group">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Search by location, type, or price...">
+                    </div>
+                    <div class="filter-group">
+                        <select id="location-filter">
+                            <option value="all">All Locations</option>
+                            <option value="thakur-complex">Thakur Complex</option>
+                            <option value="thakur-village">Thakur Village</option>
+                        </select>
+                        <select id="type-filter">
+                            <option value="all">All Types</option>
+                            <option value="flat">Flat</option>
+                            <option value="shop">Shop</option>
+                        </select>
+                        <select id="transaction-filter">
+                            <option value="all">All Transactions</option>
+                            <option value="sale">For Sale</option>
+                            <option value="rent">For Rent</option>
+                        </select>
+                    </div>
+                    <button class="btn search-btn">Search Properties</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Categories -->
+    <section class="property-categories">
+        <div class="container">
+            <h2>Property Categories</h2>
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All Properties</button>
+                <button class="tab-btn" data-category="flat-sale">Flats for Sale</button>
+                <button class="tab-btn" data-category="flat-rent">Flats for Rent</button>
+                <button class="tab-btn" data-category="shop-sale">Shops for Sale</button>
+                <button class="tab-btn" data-category="shop-rent">Shops for Rent</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Listings -->
+    <section class="property-listings">
+        <div class="container">
+            <div class="listings-header">
+                <h2>Available Properties</h2>
+                <p class="results-count">Showing <span id="results-count">60</span> properties</p>
+            </div>
+            
+            <div class="property-grid" id="property-grid">
+                <!-- Properties will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Comparison -->
+    <section class="property-comparison">
+        <div class="container">
+            <h2>Compare Properties</h2>
+            <div class="comparison-container">
+                <div class="comparison-item">
+                    <h3>Property 1</h3>
+                    <div class="comparison-placeholder">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>Add property to compare</p>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <h3>Property 2</h3>
+                    <div class="comparison-placeholder">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>Add property to compare</p>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <h3>Property 3</h3>
+                    <div class="comparison-placeholder">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>Add property to compare</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn compare-btn">Compare Properties</button>
+        </div>
+    </section>
+
+    <!-- Property Statistics -->
+    <section class="property-stats">
+        <div class="container">
+            <h2>Market Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-home"></i>
+                    <h3>500+</h3>
+                    <p>Properties Listed</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>15%</h3>
+                    <p>Price Growth</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>30 Days</h3>
+                    <p>Average Sale Time</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>4.8/5</h3>
+                    <p>Client Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Zaver Estate</h3>
+                    <p>Your trusted real estate partner in Thakur Complex & Thakur Village</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Property Buying</a></li>
+                        <li><a href="services.html">Property Selling</a></li>
+                        <li><a href="services.html">Property Rent</a></li>
+                        <li><a href="services.html">Home Loan</a></li>
+                        <li><a href="services.html">Legal Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zaver Estate Consultant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/918333957709" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaver Estate Consultant - Premium Real Estate Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-home"></i>
+                <span>Zaver Estate</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Turning Dreams into Addresses</h1>
+            <p>Premium Real Estate Services in Thakur Complex & Thakur Village</p>
+            <div class="search-box">
+                <input type="text" placeholder="Search by City, Type, Budget">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="hero-video">
+            <!-- Background video or image -->
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <h2>Featured Properties</h2>
+            <div class="property-carousel">
+                <div class="property-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Property">
+                    <div class="property-info">
+                        <h3>Luxury Apartment</h3>
+                        <p>Thakur Complex, Mumbai</p>
+                        <p class="price">₹2.5 Cr</p>
+                        <button class="btn">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Property">
+                    <div class="property-info">
+                        <h3>Commercial Shop</h3>
+                        <p>Thakur Village, Mumbai</p>
+                        <p class="price">₹1.8 Cr</p>
+                        <button class="btn">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Property">
+                    <div class="property-info">
+                        <h3>Rent Apartment</h3>
+                        <p>Thakur Complex, Mumbai</p>
+                        <p class="price">₹25,000/month</p>
+                        <button class="btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>500+ Happy Clients</h3>
+                    <p>Trusted by home buyers and investors</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>10+ Years Experience</h3>
+                    <p>Expert real estate guidance</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Prime Locations</h3>
+                    <p>Best properties in Thakur Complex & Thakur Village</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Transactions</h3>
+                    <p>Legal documentation support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Property Buying</h3>
+                    <p>Find your dream home with expert guidance</p>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Property Selling</h3>
+                    <p>Maximize your property value</p>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-key"></i>
+                    <h3>Property Rent</h3>
+                    <p>Find the perfect rental property</p>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Home Loan Assistance</h3>
+                    <p>Best loan options for your needs</p>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Legal Documentation</h3>
+                    <p>Complete legal support</p>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Property Valuation</h3>
+                    <p>Accurate market valuation</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Listings -->
+    <section id="properties" class="properties">
+        <div class="container">
+            <h2>Property Listings</h2>
+            
+            <!-- Property Filters -->
+            <div class="property-filters">
+                <select id="location-filter">
+                    <option value="all">All Locations</option>
+                    <option value="thakur-complex">Thakur Complex</option>
+                    <option value="thakur-village">Thakur Village</option>
+                </select>
+                <select id="type-filter">
+                    <option value="all">All Types</option>
+                    <option value="flat">Flat</option>
+                    <option value="shop">Shop</option>
+                </select>
+                <select id="transaction-filter">
+                    <option value="all">All Transactions</option>
+                    <option value="sale">For Sale</option>
+                    <option value="rent">For Rent</option>
+                </select>
+            </div>
+
+            <!-- Property Grid -->
+            <div class="property-grid">
+                <!-- Flats for Sale -->
+                <div class="property-item" data-location="thakur-complex" data-type="flat" data-transaction="sale">
+                    <img src="https://via.placeholder.com/300x200" alt="Property">
+                    <div class="property-details">
+                        <h3>2BHK Apartment</h3>
+                        <p>Thakur Complex, Mumbai</p>
+                        <p class="price">₹2.5 Cr</p>
+                        <p class="area">1200 sqft</p>
+                        <div class="property-actions">
+                            <button class="btn btn-primary">View Details</button>
+                            <button class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flats for Rent -->
+                <div class="property-item" data-location="thakur-complex" data-type="flat" data-transaction="rent">
+                    <img src="https://via.placeholder.com/300x200" alt="Property">
+                    <div class="property-details">
+                        <h3>1BHK Apartment</h3>
+                        <p>Thakur Complex, Mumbai</p>
+                        <p class="price">₹18,000/month</p>
+                        <p class="area">650 sqft</p>
+                        <div class="property-actions">
+                            <button class="btn btn-primary">View Details</button>
+                            <button class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shops for Sale -->
+                <div class="property-item" data-location="thakur-village" data-type="shop" data-transaction="sale">
+                    <img src="https://via.placeholder.com/300x200" alt="Property">
+                    <div class="property-details">
+                        <h3>Commercial Shop</h3>
+                        <p>Thakur Village, Mumbai</p>
+                        <p class="price">₹1.8 Cr</p>
+                        <p class="area">500 sqft</p>
+                        <div class="property-actions">
+                            <button class="btn btn-primary">View Details</button>
+                            <button class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shops for Rent -->
+                <div class="property-item" data-location="thakur-village" data-type="shop" data-transaction="rent">
+                    <img src="https://via.placeholder.com/300x200" alt="Property">
+                    <div class="property-details">
+                        <h3>Retail Shop</h3>
+                        <p>Thakur Village, Mumbai</p>
+                        <p class="price">₹25,000/month</p>
+                        <p class="area">300 sqft</p>
+                        <div class="property-actions">
+                            <button class="btn btn-primary">View Details</button>
+                            <button class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Client Testimonials</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excellent service and professional guidance. Found my dream home in Thakur Complex!"</p>
+                    <h4>- Rajesh Kumar</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Great team helped me find the perfect commercial property in Thakur Village."</p>
+                    <h4>- Priya Sharma</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Thakur Complex, 90 feet road, Mumbai 400101</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 98339 57709</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@zaverestate.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon-Sat: 9:00 AM - 6:00 PM</p>
+                    </div>
+                    <button class="btn whatsapp-contact">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </button>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.1234567890123!2d72.8321!3d19.1426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8f0f0f0f0f0%3A0x0!2sThakur%20Complex%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1234567890123" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Zaver Estate</h3>
+                    <p>Your trusted real estate partner in Thakur Complex & Thakur Village</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Property Buying</a></li>
+                        <li><a href="#services">Property Selling</a></li>
+                        <li><a href="#services">Property Rent</a></li>
+                        <li><a href="#services">Home Loan</a></li>
+                        <li><a href="#services">Legal Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zaver Estate Consultant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/918333957709" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
